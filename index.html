@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tic-tac-toe game</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Tic-tac-toe</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="game">
+        <div class="game__info">
+          <div class="message">Player X turn first</div>
+          <!-- <div class="winner">Player X wins!</div> -->
+          <div class="users">
+            <span class="user current" data-user="X">Player X</span>
+            <span> : </span>
+            <span class="user" data-user="O">Player O</span>
+          </div>
+
+        </div>
+        <div class="game__board"></div>        
+        <!-- <button class="btn game__start hidden">Start game</button> -->
+        <ul class="steps hidden">
+          <h2>Game's steps</h2>
+        </ul>                
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer container">
+      <span class="copyright">© 2022</span>
+      <a href="https://github.com/azozulya" title="Go to GitHub" class="footer__link">github</a>
+      <a href="https://rs.school/js-stage0/" title="Go to Rolling Scopes School" class="footer__link">Rolling Scopes
+        School</a>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

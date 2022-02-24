@@ -1,0 +1,238 @@
+body {
+  background-color: #ffd2ba;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  color: #290e5c;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game__info {
+  text-align: center;
+}
+
+.game__board {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (120px)[3];
+      grid-template-columns: repeat(3, 120px);
+  -ms-grid-rows: (120px)[3];
+      grid-template-rows: repeat(3, 120px);
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: slideDown 1s;
+          animation: slideDown 1s;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.game__board.hidden {
+  display: none;
+}
+
+.game__board-cell {
+  font-size: 6rem;
+  cursor: pointer;
+  background-color: #e4763b;
+  border-color: #ffa97b;
+}
+
+.game__board-cell:hover {
+  background-color: #ff762c;
+}
+
+.game__board-cell.win {
+  background-color: red;
+  color: #fff;
+}
+
+.game__start {
+  margin: 2rem auto;
+  display: block;
+  padding: 0.7rem 1rem;
+}
+
+.sign-X {
+  color: #d9c11e;
+}
+
+.sign-O {
+  color: #1bc592;
+}
+
+.btn {
+  border: 0;
+  font-size: 1.7rem;
+  background-color: red;
+  color: #fff;
+  -webkit-box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #920303;
+}
+
+.steps {
+  list-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  background-color: #ddd;
+  border: solid 1px #999;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.step {
+  padding: 0.5rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step__btn {
+  border-radius: 0.2rem;
+  padding: 0.18rem 0.8rem;
+  margin: 0 0.5rem 0 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.step__btn:hover {
+  background-color: #fff;
+}
+
+.step__btn.active {
+  background-color: darkred;
+  color: #eee;
+}
+
+.users {
+  margin: 1.5rem 0;
+}
+
+.user {
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.user.current {
+  background-color: #ad85fa;
+  color: #fff;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+.last-games {
+  background-color: #fff6ba;
+  border: solid 1px #d9c11e;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 3rem 0;
+}
+
+.last-games__item {
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+  padding: 0.4rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2em 1fr 1fr auto;
+      grid-template-columns: 2em 1fr 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+}
+
+.last-games__item:last-child {
+  border-bottom: 0;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 0;
+}
+/*# sourceMappingURL=style.css.map */
